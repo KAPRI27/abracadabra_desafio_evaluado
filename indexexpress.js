@@ -23,8 +23,8 @@ app.get('/abracadabra/conejo/:numero/', (req, res) => {
     const numero = req.params.numero;
     // Paso 4 Utilizar un operador ternario para evaluar que el número generado de forma aleatoria, sea igual al recibido en la ruta como parámetro.
     numero == n
-    ? res.send("Hoy estás de suerte ;)" + `<img src="../conejito.jpg" alt="Forest" />`):   //aquí hay que poner la ruta que lleve a la foto del conejo
-    res.send("Buena suerte para la próxima..." + `<img src="../voldemort.jpg">`); //aqui hay que poner la ruta que lleve a la imagen de Voldemort
+    ? res.send(`<h1>Hoy estás de suerte 🥳</h1>` + `<img src="../conejito.jpg" alt="Conejito" />`):   //aquí hay que poner la ruta que lleve a la foto del conejo
+    res.send(`<h1>Buena suerte para la próxima...🥺</h1>` + `<img src="../voldemort.jpg" alt="Voldemort">`); //aqui hay que poner la ruta que lleve a la imagen de Voldemort
 });
 
 
