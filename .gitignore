@@ -1,0 +1,7 @@
+#IGNORA NODE_MODULES
+node_modules
+
+#ARCHIVOS DE PRÁCTICA
+indexexpress.JS
+indexnode.js
+paisaje.jpg

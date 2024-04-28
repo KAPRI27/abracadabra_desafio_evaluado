@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1"
+  },
+  "name": "abracadabra_desafio_evaluado",
+  "version": "1.0.0",
+  "description": "desafio evaluado empezando con nodejs",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pmaureira",
+  "license": "ISC"
+}
