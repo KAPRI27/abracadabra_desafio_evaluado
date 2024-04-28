@@ -40,9 +40,10 @@ app.use(express.static("assets"));
 // Paso 3 Crear una ruta GET raíz que devuelva el documento index.html.
 app.get("/", (req, res) => {
     //sendFile permite devolver un archivo especificando su ruta como argumento, en este caso devuelve el index.html.  __dirname es una variable  que contiene la referencia a la dirección del árbol de archivos donde se ubica el archivo
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + "/index.html")
 })
 
 app.listen(3000, () => {
     console.log("El servidor express está inicializado en el puerto 3000");
+    
 });
