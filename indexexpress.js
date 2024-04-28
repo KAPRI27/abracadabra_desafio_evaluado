@@ -10,12 +10,12 @@ app.listen(3000, () => {
 })
 
 
-app.get("/Toctoc", (req, res) => {
+app.get("/abracadabra", (req, res) => {
     res.send("Quién es? &#128526;")
 })
-/*
+
 // Paso 1 Agregar una ruta GET/azar/:numero
-app.get('/azar/:numero/', (req, res) => {
+app.get('/abracadabra/conejo/:numero/', (req, res) => {
     //res.send(req.params.id)
     // Paso 2 Ocupar el objeto Math para generar un número entero aleatorio entre 1 y 3.
     const n = Math.floor(Math.random() * (4-1)) + 1;
@@ -23,10 +23,10 @@ app.get('/azar/:numero/', (req, res) => {
     const numero = req.params.numero;
     // Paso 4 Utilizar un operador ternario para evaluar que el número generado de forma aleatoria, sea igual al recibido en la ruta como parámetro.
     numero == n
-    ? res.send("Hoy estás de suerte ;)"):   //aquí hay que poner la ruta que lleve a la foto del conejo
-    res.send("Buena suerte para la próxima..."); //aqui hay que poner la ruta que lleve a la imagen de Voldemort
+    ? res.send("Hoy estás de suerte ;)" + `<img src="../conejito.jpg" alt="Forest" />`):   //aquí hay que poner la ruta que lleve a la foto del conejo
+    res.send("Buena suerte para la próxima..." + `<img src="../voldemort.jpg">`); //aqui hay que poner la ruta que lleve a la imagen de Voldemort
 });
-*/
+
 
 app.get("/estudiar", function(req, res) {
     // Paso 2 En la respuesta redireccionamos a la página de Desafio Latam
